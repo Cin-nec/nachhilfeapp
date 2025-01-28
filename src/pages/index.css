@@ -1,0 +1,108 @@
+body {
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.header--heading {
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #374151;
+}
+
+.main {
+    height: 70%;
+    width: 100%;
+    background-color: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main--image {
+    width: 40rem;
+    height: 40rem;
+}
+
+.main--paragraph {
+    height: 40rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.main--bold {
+    font-size: 1.2rem;
+}
+
+.footer {
+    width: 100%;
+    height: 20%;
+    background-color: #455266;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    color: #ffffff;
+}
+
+.footer--link {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .main--image {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .main--paragraph {
+        width: 20rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .header {
+        height: 5rem;
+    }
+
+    .footer {
+        height: 9rem;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    body {
+        height: auto;
+    }
+
+    @media only screen and (max-width: 510px){
+        .main--paragraph {
+            width: 100%;
+            padding: 1.5rem;
+        }
+
+        .main--image {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 330px){
+            .main--paragraph {
+                height: 50rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,274 @@
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0 0.5rem 0 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #5853F5;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.form--group-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form--group-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.form--input-text {
+    outline: none;
+    width: 18rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border: 0.1rem solid #374151;
+    color: #374151;
+    border-radius: 0.35rem;
+}
+
+.form--input-text:focus {
+    border: 0.1rem solid #5853F5;
+}
+
+.form--input-text-small {
+    outline: none;
+    width: 10rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border: 0.1rem solid #374151;
+    color: #374151;
+    border-radius: 0.35rem;
+}
+
+.form--input-text-small:focus {
+    border: 0.1rem solid #5853F5;
+}
+
+.form--input-password {
+    outline: none;
+    width: 18rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border: 0.1rem solid #374151;
+    color: #374151;
+    border-radius: 0.25rem;
+}
+
+.form--input-password:focus {
+    border: 0.1rem solid #5853F5;
+}
+
+.form--input-label {
+    color: #374151;
+}
+
+.form--input-label-small {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+.form--button {
+    width: 18rem;
+    outline: none;
+    height: 2.5rem;
+    background-color: #5853F5;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+
+.form--button-light {
+    width: 18rem;
+    outline: none;
+    height: 2.5rem;
+    background-color: #374151;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+
+/* Range Input Styles */
+
+.form--input-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12rem;
+    height: 0.5rem;
+    background: #d5d5d5;
+    outline: none;
+    border-radius: 0.35rem;
+}
+
+.form--input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: #5853F5;
+    cursor: pointer;
+    border-radius: 100000px;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.form--input-range::-moz-range-thumb {
+    width: 1.1rem;
+    height: 1.1rem;
+    background: #5853F5;
+    cursor: pointer;
+    border-radius: 100000px;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.form--input-range-value {
+    height: 2rem;
+    background-color: #5853F5;
+    color: #ffffff;
+    width: 3.5rem;
+    margin-left: 0.3rem;
+    border-radius: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form--input-textarea {
+    height: 3.5rem;
+    resize: vertical;
+    width: 65%;
+    outline: none;
+    border: 0.1rem solid #374151;
+    border-radius: 0.35rem;
+    color: #374151;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 500px){
+    .form--input-textarea {
+       width: 18rem;
+    }
+}
+
+.form--input-textarea:focus {
+    border: 0.1rem solid #5853F5;
+}
+
+.form--error-container {
+    position: relative;
+}
+
+.form--error {
+    position: absolute;
+    font-size: 0.8rem;
+    color: #FA4B4B;
+}
+
+.form--visibility {
+    height: 2rem;
+    width: 2rem;
+    background-color: #F3F4F6;
+    color: #374151;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.75rem;
+    left: 15rem;
+    border-radius: 100000px;
+    cursor: pointer;
+}
+
+.form--visibility-none {
+    display: none;
+}
+
+.form--highlight {
+    color: #5853F5;
+}
+
+.form--vorgabe {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.form--popup {
+    height: 15rem;
+}
+
+.form--popup-button {
+    margin-left: 5.5rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 500px){
+    .form--popup {
+        height: 25rem;
+    }
+
+    .form--popup-button {
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .form--input-password {
+        width: 15rem;
+    }
+
+    .form--input-text {
+        width: 15rem;
+    }
+
+    .form--button {
+        width: 15rem;
+    }
+
+    .form--button-light {
+        width: 15rem;
+    }
+
+    .form--visibility {
+        left: 12rem;
+    }
+
+    .form--input-range {
+        width: 8rem;
+    }
+
+    .form--input-textarea {
+        width: 15rem;
+    }
+}

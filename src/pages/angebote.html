@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Angebote </title>
+    <meta name="author" content="Cinnec">
+    <meta name="keywords" content="Angebote, Übersicht, Uebersicht, gesucht, Suchen, Ergebnisse, neu, Neue Angebote,">
+    <link href="navigation.css" type="text/css" rel="stylesheet">
+    <link href="base.css" type="text/css" rel="stylesheet">
+    <link href="../icons/fontawesome-free-6.4.0-web/css/all.css" type="text/css" rel="stylesheet">
+    <link href="colors.css" type="text/css" rel="stylesheet">
+    <link href="icons.css" type="text/css" rel="stylesheet">
+    <link href="offers.css" type="text/css" rel="stylesheet">
+    <link href="home.css" type="text/css" rel="stylesheet">
+    <link href="offerDetails.css" rel="stylesheet" type="text/css">
+    <link href="form.css" rel="stylesheet" type="text/css">
+    <link href="button.css" type="text/css" rel="stylesheet">
+</head>
+<body style="background-color: #F3F4F6">
+<header>
+    <nav class="nav" style="background-color: #ffffff">
+        <h2 class="nav--heading">TeachGym</h2>
+        <div class="nav--explore">Entdecken... <i style="margin-left: 0.75rem" class="fa-solid fa-caret-left"></i></div>
+        <div class="icon--button" style="position: absolute; right: 15rem"><i class="fa-regular fa-bell"></i></div>
+        <div class="icon--button" style="position: absolute; right: 12rem"><i class="fa-regular fa-user"></i></div>
+        <p class="nav--username" style="position: absolute; right: 5rem">Maurice Rösler</p>
+    </nav>
+    <div class="nav--sub">
+        <div class="nav--sub-action"><i style="margin-right: 0.2em" class="fa-solid fa-filter"></i> Filtern</div>
+        <div onclick="openPopupErstellen()" style="margin-left: 1rem" class="nav--sub-action"><i style="margin-right: 0.2em" class="fa-solid fa-trash"></i> Angebot Löschen</div>
+    </div>
+</header>
+<main class="offers--container">
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+    <div class="angebote--item">
+            <div class="mathe-bg angebote--item-header">
+                <div class="angebote--item-icon">
+                    <svg width="100%" height="100%" viewBox="0 0 315 315"  style="stroke: #F3F4F6;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
+                        <g id="mathematik_1" transform="matrix(1,0,0,1,-3720.66,-520.5)">
+                            <path d="M3850.16,666L3770.16,666C3761.33,666 3754.16,658.836 3754.16,650L3754.16,570C3754.16,561.164 3761.33,554 3770.16,554L3850.16,554C3859,554 3866.16,561.164 3866.16,570L3866.16,650C3866.16,658.836 3859,666 3850.16,666Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M4002.16,618L4002.16,650C4002.16,658.84 3995,666 3986.16,666L3906.16,666C3897.32,666 3890.16,658.84 3890.16,650L3890.16,570C3890.16,561.16 3897.32,554 3906.16,554L3986.16,554C3995,554 4002.16,561.16 4002.16,570L4002.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3850.16,802L3770.16,802C3761.33,802 3754.16,794.836 3754.16,786L3754.16,706C3754.16,697.164 3761.33,690 3770.16,690L3850.16,690C3859,690 3866.16,697.164 3866.16,706L3866.16,786C3866.16,794.836 3859,802 3850.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3986.16,802L3906.16,802C3897.33,802 3890.16,794.836 3890.16,786L3890.16,706C3890.16,697.164 3897.33,690 3906.16,690L3986.16,690C3995,690 4002.16,697.164 4002.16,706L4002.16,786C4002.16,794.836 3995,802 3986.16,802Z" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,610L3842.16,610" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3810.16,642L3810.16,578" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,586L3970.16,634" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3922.16,634L3970.16,586" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3778.16,746L3842.16,746" style="fill:none;stroke-width:8px;"/>
+                            <path d="M3914.16,746L3978.16,746" style="fill:none;stroke-width:8px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="angebote--item-content">
+                <h2 class="angebote--item-heading">Mathe Kurs</h2>
+                <div class="angebote--item-status angebote--item-status-belegt">Belegt</div>
+                <p class="angebote--item-requests">Anfragen:</p>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Max Mustermann</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Lisa Meier</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <div class="angebote--item-request">
+                    <div class="angebote--item-request-image"></div>
+                    <p class="angebote--item-request-name">Tobias Neuhauer</p>
+                    <button class="angebote--item-request-add">ADD</button>
+                </div>
+                <button class="angebote--item-button">Übersicht</button>
+            </div>
+        </div>
+</main>
+<section id="angebotErstellenPopup" class="popup--hide popup--container-medium">
+    <div onclick="closePopupErstellen()" class="popup--container-icon"><i class="fa-solid fa-x"></i></div>
+    <div class="popup--container-header">
+        <h2 class="popup--container-heading">Neues Angebot Erstellen</h2>
+    </div>
+    <form method="post">
+        <div class="popup--form-container">
+            <p class="popup--form-label">Wähle das Fach deines Angebots</p>
+            <div class="form--select-container">
+                <button type="button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown" class="form--select-button">
+                    <span class="form--select-value">Fach auswählen</span>
+                    <span class="form--select-arrow"></span>
+                </button>
+                <ul class="form--select-list" role="listbox">
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="mathe" value="mathe">
+                        <label for="mathe">Mathe</label>
+                    </li>
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="deutsch" value="deutsch">
+                        <label for="deutsch">Deutsch</label>
+                    </li>
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="bio" value="bio">
+                        <label for="bio">Bio</label>
+                    </li>
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="physik" value="physik">
+                        <label for="physik">Physik</label>
+                    </li>
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="informatik" value="informatik">
+                        <label for="informatik">Informatik</label>
+                    </li>
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="kunst" value="kunst">
+                        <label for="kunst">Kunst</label>
+                    </li>
+                    <li class="form--select-option form--select-option-radio" role="option">
+                        <input type="radio" name="fach" id="musik" value="musik">
+                        <label for="musik">Musik</label>
+                    </li>
+                </ul>
+            </div>
+            <p class="popup--form-label popup--form-margin">Setze den Status deines Angebots</p>
+            <div class="popup--form-radio-container">
+                <div class="popup--form-radio-group">
+                    <input type="radio" value="offen" name="angebot--status" id="angebot--status-offen" checked>
+                    <label class="popup--form-label" for="angebot--status-offen">Offen</label>
+                </div>
+                <div class="popup--form-radio-group">
+                    <input type="radio" value="offen" name="angebot--status" id="angebot--status-geschlossen" checked>
+                    <label class="popup--form-label" for="angebot--status-geschlossen">Geschlossen</label>
+                </div>
+            </div>
+            <p class="popup--form-label popup--form-margin">Lege die Jahrgangsstufe fest, an wen sich dein Angebot richtet:</p>
+            <div class="form--select-container">
+                <button type="button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown" class="form--select-button">
+                    <span class="form--select-value">Jahrgänge ankreuzen</span>
+                    <span class="form--select-arrow"></span>
+                </button>
+                <ul class="form--select-list" role="listbox">
+                    <li class="form--select-option" role="option">
+                        <input type="checkbox" name="alter" id="fünf" value="5">
+                        <label for="fünf">5.Klasse</label>
+                    </li>
+                    <li class="form--select-option" role="option">
+                        <input type="checkbox" name="alter" id="sechs" value="6">
+                        <label for="sechs">6.Klasse</label>
+                    </li>
+                    <li class="form--select-option" role="option">
+                        <input type="checkbox" name="alter" id="sieben" value="7">
+                        <label for="sieben">7.Klasse</label>
+                    </li>
+                    <li class="form--select-option" role="option">
+                        <input type="checkbox" name="alter" id="acht" value="8">
+                        <label for="acht">8.Klasse</label>
+                    </li>
+                    <li class="form--select-option" role="option">
+                        <input type="checkbox" name="alter" id="neun" value="9">
+                        <label for="neun">9.Klasse</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="profil--card-form-group" style="display: flex; flex-direction: row; margin-top: 2rem">
+                <button type="submit" class="button--submit">
+                    <i class="btn-submit-icon fa-regular fa-paper-plane"></i><p class="btn-submit-text">Erstellen</p>
+                </button>
+                <button style="margin-left: 0.5rem" type="reset" class="button--reset">
+                    <i class="btn-reset-icon fa-solid fa-x"></i><p class="btn-reset-text">Abbrechen</p>
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
+<div id="angebotLehrerOverlay" class="popup--hide popup--overlay"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="offer.js"></script>
+</body>
+</html>

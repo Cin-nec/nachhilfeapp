@@ -1,0 +1,16 @@
+# .htaccess
+RewriteEngine on
+RewriteBase /
+
+## vorhandene Files nicht ersetzen
+RewriteCond %{REQUEST_FILENAME} !-f
+
+## vorhandene Firectoryzugriffe nicht (sofort) ersetzen
+RewriteCond %{REQUEST_FILENAME} !-d
+
+## vorhandene Softljnks nicht ersetzen
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+## Requestziel ersetzen durch index.php nebst Querystring
+RewriteRule (.*) index.php/$1 [QSA]

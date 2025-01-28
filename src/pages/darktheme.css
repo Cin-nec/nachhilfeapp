@@ -1,0 +1,246 @@
+body {
+    background-color: #455266;
+}
+
+.darktheme-bg-light {
+    background-color: #455266;
+}
+
+.darktheme-bg {
+    background-color: #374151;
+}
+
+.darktheme-bg-dark {
+    background-color: #172029;
+}
+
+/** Home - Header **/
+.header--container {
+    background-color:  #374151;
+}
+
+.header--content-heading {
+    color: #ffffff;
+}
+
+.header--content-text {
+    color: #ffffff;
+}
+
+.header--picture {
+    border-color: #ffffff;
+}
+
+/** Home - Angebote Lehrer **/
+.angebote--main {
+    background-color: #455266;
+}
+
+.angebote--heading {
+    color: #ffffff;
+}
+
+.angebote--grid {
+    background-color: #374151;
+}
+
+.angebote--divider {
+    background-color: #374151;
+}
+
+.angebote--item {
+    background-color: #455266;
+}
+
+.angebote--item-status {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.angebote--item-heading {
+    color: #ffffff;
+}
+
+/** Navigation **/
+
+.nav {
+    background-color: #455266;
+}
+
+.nav--heading {
+    color: #ffffff;
+}
+
+.nav--username {
+    color: #ffffff;
+}
+
+.nav--sub {
+    background-color: #172029;
+}
+
+.nav--switch {
+    color: #ffffff;
+    border: 0.1rem solid #ffffff;
+}
+
+.nav--switch-active {
+    cursor: initial;
+    border: 0.1rem solid #5853F5;
+    color: #5853F5;
+}
+
+/** Buttons **/
+
+.button--border-big {
+    border-color: #5853F5;
+    outline-color: #5853F5;
+    color: #5853F5;
+    background-color: transparent;
+}
+
+.button--border-big:hover {
+    border-color: #5853F5;
+    outline-color: #374151;
+}
+
+.button--border-big-inner {
+    color: #5853F5;
+}
+
+/** Icons **/
+
+.icon--button {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+/** Footer **/
+
+.footer {
+    background-color: #172029;
+}
+
+/** Profil **/
+
+.profil--card {
+    background-color: #455266;
+}
+
+
+.profil--card-image {
+    background-color: #374151;
+    stroke: #5853F5;
+    fill: #5853F5
+}
+
+.profil--card-name {
+    color: #ffffff;
+}
+
+.profil--card-geschlecht {
+    color: #ffffff;
+}
+
+.profil--card-form-control {
+    color: #ffffff;
+}
+
+.profil--card-more {
+    background-color: #455266;
+}
+
+.profil--card-more-heading {
+    color: #ffffff;
+}
+
+/** Form **/
+
+.form--input-label-small {
+    color: #ffffff;
+}
+
+.form--input-text-small {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.form--input-text-small::placeholder {
+    color: #ffffff;
+}
+
+/** Logger **/
+
+.logger--heading {
+    color: #ffffff;
+}
+
+.logger--sub-heading {
+    color: #5853F5;
+}
+
+.logger--text {
+    color: #ffffff;
+}
+
+.logger--link {
+    color: #5853F5;
+}
+
+.logger--button {
+    background-color: #5853F5;
+}
+
+/** Offer - Details **/
+
+.angebot--wrapper {
+    background-color: #455266;
+}
+
+.angebot--content {
+    background-color: #455266;
+}
+
+.angebot--fach {
+    color: #ffffff;
+}
+
+.angebot--value {
+    color: #ffffff;
+}
+
+.angebot--teilnehmer {
+    background-color: #455266;
+}
+
+.angebot--teilnehmer-heading {
+    color: #ffffff;
+}
+
+.angebot--teilnehmer-list {
+    color: #ffffff;
+    background-color: #455266;
+}
+
+.angebot--contact-explanation {
+    color: #ffffff;
+}
+
+.angebot--empty {
+    color: #ffffff;
+}
+
+.angebot--contact-heading {
+    color: #ffffff;
+}
+
+.angebot--contact-edit {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.angebot--contact-edit:hover {
+    background-color: #ffffff;
+    color: #374151;
+}

@@ -1,0 +1,125 @@
+.logger--heading {
+    color: #374151;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.logger--sub-heading {
+    color: #4642C2;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.logger--list {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+}
+
+.logger--list-small {
+    padding: 1rem;
+}
+
+.logger--container {
+    width: 40%;
+    height: 7rem;
+    border-radius: 0.15rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.logger--container-small {
+    width: 100%;
+    height: 4rem;
+    margin: 0.5rem 0 0 0;
+}
+
+.logger--text-small {
+    font-size: 0.9rem;
+}
+
+.logger--container-delivered {
+    border: 0.1rem solid #5853F5;
+}
+
+.logger--container-read {
+   border: 0.1rem solid #F3F4F6;
+}
+
+.logger--link {
+    text-decoration: none;
+}
+
+.logger--button {
+    outline: none;
+    background-color: #374151;
+    border: none;
+    color: #ffffff;
+    width: 7rem;
+    height: 1.25rem;
+    cursor: pointer;
+    border-radius: 10000px;
+    margin-top: 1rem;
+}
+
+.logger--error {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #374151;
+}
+
+.logger--link-small {
+    text-decoration: none;
+    color: #4642C2;
+    font-size: 0.9rem;
+    text-align: center;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.icon--button-new {
+    display: none;
+}
+
+.icon--button-new-active {
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 10000px;
+    background-color: #5853F5;
+    top: 0.4rem;
+    left: 1.6rem;
+}
+
+@media only screen and (max-width: 380px) {
+    .logger--container {
+        height: 9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logger--container {
+        width: 100%;
+    }
+
+    .logger--list {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 600px) {
+    .logger--container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 920px) {
+    .logger--container {
+        width: 60%;
+    }
+}
