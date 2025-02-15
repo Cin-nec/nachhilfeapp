@@ -1,28 +1,28 @@
-.logger--heading {
+.logger__heading {
     color: #374151;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
 }
 
-.logger--sub-heading {
+.logger__sub-heading {
     color: #4642C2;
     font-size: 1.2rem;
     text-align: center;
 }
 
-.logger--list {
+.logger__list {
     display: flex;
     flex-direction: column;
     padding: 3rem;
     align-items: center;
 }
 
-.logger--list-small {
+.logger__list--small {
     padding: 1rem;
 }
 
-.logger--container {
+.logger__container {
     width: 40%;
     height: 7rem;
     border-radius: 0.15rem;
@@ -30,29 +30,29 @@
     padding: 0.5rem;
 }
 
-.logger--container-small {
+.logger__container--small {
     width: 100%;
     height: 4rem;
     margin: 0.5rem 0 0 0;
 }
 
-.logger--text-small {
+.logger__text--small {
     font-size: 0.9rem;
 }
 
-.logger--container-delivered {
+.logger__container-delivered {
     border: 0.1rem solid #5853F5;
 }
 
-.logger--container-read {
+.logger__container-read {
    border: 0.1rem solid #F3F4F6;
 }
 
-.logger--link {
+.logger__link {
     text-decoration: none;
 }
 
-.logger--button {
+.logger__button {
     outline: none;
     background-color: #374151;
     border: none;
@@ -64,14 +64,14 @@
     margin-top: 1rem;
 }
 
-.logger--error {
+.logger__error {
     text-align: center;
     margin-top: 3rem;
     font-size: 1.2rem;
     color: #374151;
 }
 
-.logger--link-small {
+.logger__link--small {
     text-decoration: none;
     color: #4642C2;
     font-size: 0.9rem;
@@ -80,11 +80,11 @@
     margin-top: 0.5rem;
 }
 
-.icon--button-new {
+.icon__button--new {
     display: none;
 }
 
-.icon--button-new-active {
+.icon__button--new-active {
     display: block;
     position: absolute;
     width: 0.4rem;
@@ -96,30 +96,30 @@
 }
 
 @media only screen and (max-width: 380px) {
-    .logger--container {
+    .logger__container {
         height: 9rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .logger--container {
+    .logger__container {
         width: 100%;
     }
 
-    .logger--list {
+    .logger__list {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
 
 @media only screen and (max-width: 920px) and (min-width: 600px) {
-    .logger--container {
+    .logger__container {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 920px) {
-    .logger--container {
+    .logger__container {
         width: 60%;
     }
 }

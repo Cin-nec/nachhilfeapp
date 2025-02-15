@@ -1,7 +1,7 @@
 /* Beschriftung ändern */
-const teilnehmerEntfernenButtons = document.querySelectorAll('.angebot--teilnehmer-delete');
-const teilnehmerAblehnenButtons = document.querySelectorAll('.angebot--anfragen-ablehnen');
-const teilnehmerAkzeptierenButtons = document.querySelectorAll('.angebot--anfragen-annehmen');
+const teilnehmerEntfernenButtons = document.querySelectorAll('.angebot__teilnehmer-delete');
+const teilnehmerAblehnenButtons = document.querySelectorAll('.angebot__anfragen-ablehnen');
+const teilnehmerAkzeptierenButtons = document.querySelectorAll('.angebot__anfragen-annehmen');
 /* Select Menüs */
 // const customSelect = document.querySelectorAll(".form--select-container");
 const selectBtn = document.querySelectorAll(".form--select-button-radio");

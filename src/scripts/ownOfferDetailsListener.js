@@ -4,12 +4,12 @@ let ausstehendeAnfragenDivider = document.querySelector('#ausstehendeAnfragen');
 let kontaktFormularDivider = document.querySelector('#kontaktFormular');
 const angebotContainers = document.querySelectorAll('.angebot--eventContainer');
 /* Beschriftung ändern */
-const teilnehmerEntfernenButtons = document.querySelectorAll('.angebot--teilnehmer-delete');
-const teilnehmerAblehnenButtons = document.querySelectorAll('.angebot--anfragen-ablehnen');
-const teilnehmerAkzeptierenButtons = document.querySelectorAll('.angebot--anfragen-annehmen');
+const teilnehmerEntfernenButtons = document.querySelectorAll('.angebot__teilnehmer-delete');
+const teilnehmerAblehnenButtons = document.querySelectorAll('.angebot__anfragen-ablehnen');
+const teilnehmerAkzeptierenButtons = document.querySelectorAll('.angebot__anfragen-annehmen');
 /* Select Menüs */
 // const customSelect = document.querySelectorAll(".form--select-container");
-const selectBtn = document.querySelectorAll(".form--select-button");
+const selectBtn = document.querySelectorAll(".form__select-button");
 const selectedValue = document.querySelector(".form--select-value");
 const optionsList = document.querySelectorAll(".form--select-option-radio");
 

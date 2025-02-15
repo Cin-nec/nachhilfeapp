@@ -1,4 +1,4 @@
-.header--container {
+.header__container {
     width: 80%;
     margin-left: 10%;
     height: 20rem;
@@ -9,13 +9,13 @@
 }
 
 @media only screen and (max-width: 940px) {
-    .header--container {
+    .header__container {
         height: 40rem;
         flex-direction: column;
     }
 }
 
-.header--content {
+.header__content {
     width: 50%;
     height: 100%;
     padding-top: 2rem;
@@ -23,22 +23,22 @@
     padding-right: 5rem;
 }
 
-.header--content-heading {
+.header__content-heading {
     font-size: 2.5rem;
     color: #374151;
     font-weight: 600;
 }
 
-.header--content-heading-center {
+.header__content-heading--center {
     text-align: center;
 }
 
-.header--content-text {
+.header__content-text {
     font-size: 1.1rem;
     color: #374151;
 }
 
-.header--picture {
+.header__picture {
     width: 50%;
     height: 100%;
     border: 0.1rem solid #374151;
@@ -46,32 +46,32 @@
 }
 
 @media only screen and (max-width: 940px) {
-    .header--container {
+    .header__container {
         width: 90%;
         margin-left: 5%;
     }
-    .header--content {
+    .header__content {
         width: 100%;
         padding-right: 2rem;
         height: 20rem;
     }
 
-    .header--picture {
+    .header__picture {
         width: 100%;
         height: 20rem;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .header--content {
+    .header__content {
         padding: 1rem 1rem 0 1rem;
     }
-    .header--content-heading {
+    .header__content-heading {
         font-size: 2.1rem;
     }
 }
 
-.angebote--main {
+.angebote__main {
     margin-top: 8rem;
     width: 90%;
     margin-left: 5%;
@@ -81,7 +81,7 @@
     flex-direction: column;
 }
 
-.angebote--divider {
+.angebote__divider {
     width: 100%;
     height: 6rem;
     padding-left: 4rem;
@@ -91,13 +91,13 @@
     background-color: #F3F4F6;
 }
 
-.angebote--heading {
+.angebote__heading {
     font-weight: 600;
     font-size: 1.5rem;
     color: #374151;
 }
 
-.angebote--link {
+.angebote__link {
     display: block;
     margin-left: auto;
     margin-right: 4rem;
@@ -105,7 +105,7 @@
     color: #5853F5;
 }
 
-.angebote--grid {
+.angebote__grid {
     background-color: #F3F4F6;
     width: 100%;
     height: 32rem;
@@ -114,39 +114,39 @@
     overflow: hidden;
 }
 
-.angebote--grid-teacher {
+.angebote__grid--teacher {
     margin-bottom: 3rem;
     height: 24rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
 
-.angebote--grid-booked {
+.angebote__grid--booked {
     padding-bottom: 3rem;
     height: auto;
     padding-top: 3rem;
 }
 
-.angebote--grid-open {
+.angebote__grid--open {
     padding-bottom: 3rem;
     height: auto;
     padding-top: 3rem;
 }
 
-.angebote--grid-hidden {
+.angebote__grid--hidden {
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 3rem;
 }
 
-.angebote--item {
+.angebote__item {
     background-color: #ffffff;
     border-radius: 0.5rem;
     width: 18rem;
 }
 
-.angebote--item-header {
+.angebote__item-header {
     width: 100%;
     height: 10rem;
     border-top-left-radius: 0.5rem;
@@ -156,7 +156,7 @@
     justify-content: center;
 }
 
-.angebote--item-icon {
+.angebote__item-icon {
     width: 5.5rem;
     height: 5.5rem;
     border: solid 0.1rem #F3F4F6;
@@ -164,20 +164,20 @@
     padding: 1rem;
 }
 
-.angebote--item-content {
+.angebote__item-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.angebote--item-heading {
+.angebote__item-heading {
     font-weight: 600;
     color: #374151;
     margin-bottom: 1rem;
 }
 
-.angebote--item-status {
+.angebote__item-status {
     width: 6rem;
     height: 1.5rem;
     border: 0.1rem solid #5853F5;
@@ -188,14 +188,14 @@
     justify-content: center;
 }
 
-.angebote--item-requests {
+.angebote__item-requests-list {
     color: #374151;
     text-transform: uppercase;
     font-size: 0.9rem;
     margin-top: 1rem;
 }
 
-.angebote--item-request {
+.angebote__item-request {
     margin-top: 0.5rem;
     width: 100%;
     height: 2.5rem;
@@ -207,11 +207,11 @@
     border-radius: 0.5rem;
 }
 
-.angebote--item-request-container {
+.angebote__item-request-container {
     height: 9rem;
 }
 
-.angebote--item-request-image {
+.angebote__item-request-image {
     width: 1.75rem;
     height: 1.75rem;
     background-color: #ffffff;
@@ -219,11 +219,11 @@
     margin-right: 1rem;
 }
 
-.angebote--item-request-name {
+.angebote__item-request-name {
     color: #374151;
 }
 
-.angebote--item-request-add {
+.angebote__item-request-add {
     margin-left: auto;
     margin-right: 2rem;
     outline: none;
@@ -235,7 +235,7 @@
     cursor: pointer;
 }
 
-.angebote--item-button {
+.angebote__item-button {
     height: 2rem;
     margin-top: 1rem;
     border-radius: 10000px;
@@ -253,16 +253,16 @@
     text-decoration: none;
 }
 
-.angebote--item-button:hover {
+.angebote__item-button:hover {
     background-color: #374151;
 }
 
-.angebote--item-booked-name {
+.angebote__item-booked-name {
     color: #374151;
     font-size: 1rem;
 }
 
-.angebote--booked {
+.angebote__booked {
     width: 100%;
     height: 30rem;
     background-color: #374151;
@@ -270,13 +270,13 @@
     padding-top: 2rem;
 }
 
-.angebote--booked-heading {
+.angebote__booked-heading {
     text-align: center;
     color: #ffffff;
     font-weight: 550;
 }
 
-.angebote--booked-list {
+.angebote__booked-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,13 +286,13 @@
     height: 15rem;
 }
 
-.angebote--booked-list-request {
+.angebote__booked-list--request {
     height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.angebote--booked-item {
+.angebote__booked-item {
     width: 90%;
     height: 4.5rem;
     background-color: #ffffff;
@@ -303,7 +303,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .angebote--booked-item {
+    .angebote__booked-item {
         width: 14rem;
         display: flex;
         flex-direction: column;
@@ -312,12 +312,12 @@
         padding-top: 1rem;
     }
 
-    .angebote--booked-home {
+    .angebote__booked-home {
         height: auto;
         padding-bottom: 2rem;
     }
 
-    .angebote--booked-list-home {
+    .angebote__booked-list--home {
         height: auto;
         padding: 2rem calc((100% - 44rem) / 2) 2rem calc((100% - 44rem) / 2);
         display: grid;
@@ -325,27 +325,27 @@
         column-gap: 1rem;
     }
 
-    .angebote--booked-item-home {
+    .angebote__booked-item--home {
         height: 18rem;
         width: 14rem;
     }
 }
 
 @media only screen and (max-width: 730px){
-    .angebote--booked-list-home {
+    .angebote__booked-list--home {
         padding: 2rem calc((100% - 30rem) / 2) 2rem calc((100% - 30rem) / 2);
         grid-template-columns: 14rem 14rem;
     }
 }
 
 @media only screen and (max-width: 520px){
-    .angebote--booked-list-home {
+    .angebote__booked-list--home {
         padding: 2rem calc((100% - 16rem) / 2) 2rem calc((100% - 16rem) / 2);
         grid-template-columns: 14rem;
     }
 }
 
-.angebote--booked-wrapper {
+.angebote__booked-wrapper {
     width: 20%;
     height: 100%;
     border-top-left-radius: 0.25rem;
@@ -355,7 +355,7 @@
     justify-content: center;
 }
 
-.angebote--booked-icon {
+.angebote__booked-icon {
     width: 3.75rem;
     height: 3.75rem;
     border-radius: 10000px;
@@ -367,18 +367,18 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .angebote--booked-wrapper {
+    .angebote__booked-wrapper {
         width: 4.4rem;
         height: 4.4rem;
         border-radius: 10000px;
     }
 
-    .angebote--booked-icon {
+    .angebote__booked-icon {
         border: none;
     }
 }
 
-.angebote--booked-class {
+.angebote__booked-class {
     width: 10%;
     height: 100%;
     color: #5853F5;
@@ -389,7 +389,7 @@
     text-transform: uppercase;
 }
 
-.angebote--booked-name {
+.angebote__booked-name {
     width: 20%;
     height: 100%;
     display: flex;
@@ -399,7 +399,7 @@
     font-size: 1.2rem;
 }
 
-.angebote--booked-age {
+.angebote__booked-age {
     width: 15%;
     height: 100%;
     display: flex;
@@ -407,7 +407,7 @@
     color: #374151;
 }
 
-.angebote--booked-status {
+.angebote__booked-status {
     width: 25%;
     height: 100%;
     display: flex;
@@ -415,13 +415,13 @@
     padding-left: 2rem;
 }
 
-.angebote--booked-ausstehend {
+.angebote__booked-ausstehend {
     margin-left: 1rem;
     color: #FA4B4B;
 }
 
 @media only screen and (max-width: 1200px) {
-    .angebote--booked-class {
+    .angebote__booked-class {
         height: auto;
         width: auto;
         text-align: center;
@@ -429,7 +429,7 @@
         margin-top: 0.5rem;
     }
 
-    .angebote--booked-name {
+    .angebote__booked-name {
         height: auto;
         width: auto;
         text-align: center;
@@ -437,13 +437,13 @@
         margin-top: 0.5rem;
     }
 
-    .angebote--booked-age {
+    .angebote__booked-age {
         height: auto;
         width: auto;
         text-align: center;
     }
 
-    .angebote--booked-status {
+    .angebote__booked-status {
         margin-top: 0.5rem;
         height: auto;
         width: auto;
@@ -452,14 +452,14 @@
         flex-direction: column;
     }
 
-    .angebote--booked-ausstehend {
+    .angebote__booked-ausstehend {
         display: block;
         text-align: center;
         margin-left: 0;
     }
 }
 
-.angebote--booked-button {
+.angebote__booked-button {
     width: 10%;
     height: 100%;
     display: flex;
@@ -467,25 +467,25 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .angebote--booked-button {
+    .angebote__booked-button {
         height: 2.5rem;
         width: 8rem;
         justify-content: center;
     }
 }
 
-.angebote--booked-link {
+.angebote__booked-link {
     cursor: pointer;
     background-color: transparent;
     width: 7rem;
     transition: all 0.25s ease-in-out;
 }
 
-.angebote--booked-link:hover {
+.angebote__booked-link:hover {
     transform: translateY(-0.15rem);
 }
 
-.angebote--booked-more {
+.angebote__booked-more {
     margin-left: 0;
     margin-right: 0;
     text-align: center;
@@ -493,13 +493,13 @@
     color: #5853F5;
 }
 
-.angebote--heading-not-found {
+.angebote__heading--not-found {
     font-size: 1.1rem;
     margin-top: 3rem;
     color: #374151;
 }
 
-.angebote--heading-not-found-white {
+.angebote__heading--not-found-white {
     color: #ffffff;
 }
 
@@ -508,23 +508,23 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         grid-template-columns: 18.5rem;
         grid-row-gap: 2.5rem;
         justify-content: center;
     }
 
-    .angebote--grid {
+    .angebote__grid {
         height: available;
         overflow: visible;
         padding: 3rem 1rem;
     }
 
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         overflow: visible;
     }
 
-    .angebote--main {
+    .angebote__main {
         height: auto;
         padding-bottom: 3rem;
         padding-top: 3rem;
@@ -532,38 +532,38 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .angebote--heading {
+    .angebote__heading {
         font-size: 1.2rem;
     }
 
-    .angebote--divider {
+    .angebote__divider {
         padding-left: 1rem;
     }
 
-    .angebote--link {
+    .angebote__link {
         margin-right: 1rem;
         font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 400px){
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         grid-template-columns: 21.5rem;
         grid-row-gap: 2.5rem;
         justify-content: center;
     }
 
-    .angebote--grid {
+    .angebote__grid {
         height: available;
         overflow: visible;
         padding: 3rem 1rem;
     }
 
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         overflow: visible;
     }
 
-    .angebote--main {
+    .angebote__main {
         height: auto;
         padding-bottom: 3rem;
         padding-top: 3rem;
@@ -571,22 +571,22 @@
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 900px) {
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         grid-template-columns: 21.5rem 21.5rem;
         grid-row-gap: 2.5rem;
     }
 
-    .angebote--grid {
+    .angebote__grid {
         height: available;
         overflow: visible;
         padding: 3rem 2rem;
     }
 
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         overflow: visible;
     }
 
-    .angebote--main {
+    .angebote__main {
         height: auto;
         padding-bottom: 3rem;
         padding-top: 3rem;
@@ -594,66 +594,66 @@
 }
 
 @media only screen and (min-width: 1400px) {
-    .angebote--grid-hidden {
+    .angebote__grid--hidden {
         grid-template-columns: 21.5rem 21.5rem 21.5rem;
     }
 
-    .angebote--grid {
+    .angebote__grid {
         width: 78.75rem;
     }
 
-    .angebote--divider {
+    .angebote__divider {
         width: 78.75rem;
     }
 
-    .angebote--main {
+    .angebote__main {
         align-items: center;
     }
 
-    .angebote--booked {
+    .angebote__booked {
         margin-left: calc(50% - 39.375rem);
         width: 78.75rem;
         border-radius: 0.5rem;
     }
 
-    .header--container {
+    .header__container {
         width: 78.75rem;
         margin-left: calc(50% - 39.375rem);
     }
 }
 
-.angebote--grid-hidden-home {
+.angebote__grid--hidden-home {
     grid-template-columns: 18rem 18rem 18rem;
     grid-column-gap: 1rem;
     padding: 0 calc((100% - 56rem) / 2) 0 calc((100% - 56rem) / 2);
 }
 
 @media only screen and (max-width: 1060px) {
-    .angebote--grid-hidden-home {
+    .angebote__grid--hidden-home {
         grid-template-columns: 18rem 18rem;
         padding: 0 calc((100% - 38rem) / 2) 0 calc((100% - 38rem) / 2);
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .angebote--grid-hidden-home {
+    .angebote__grid--hidden-home {
         grid-template-columns: 18rem;
         padding: 0 calc((100% - 20rem) / 2) 0 calc((100% - 20rem) / 2);
     }
 }
 
 @media only screen and (max-width: 350px) {
-    .angebote--grid-hidden-home {
+    .angebote__grid--hidden-home {
         grid-template-columns: 14rem;
         padding: 0 calc((100% - 16rem) / 2) 0 calc((100% - 16rem) / 2);
     }
 
-    .angebote--item {
+    .angebote__item {
         width: 14rem;
     }
 }
 
-.angebote--grid-teacher-home {
+.angebote__grid--teacher-home {
     height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;

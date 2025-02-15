@@ -1,4 +1,4 @@
-.offers--container {
+.offers__container {
     width: 100%;
     padding: 3rem;
     display: grid;
@@ -8,29 +8,29 @@
     justify-content: center;
 }
 
-.offers--list {
+.offers__list {
     width: 100%;
     padding: 3rem;
 }
 
-.offers--divider {
+.offers__divider {
     height: 5rem;
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 800px) {
-    .offers--container {
+    .offers__container {
         grid-template-columns: 21.5rem 21.5rem;
     }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 390px){
-    .offers--container {
+    .offers__container {
         grid-template-columns: 21.5rem;
     }
 }
 
 @media only screen and (max-width: 390px) {
-    .offers--container {
+    .offers__container {
         grid-template-columns: 16.5rem;
     }
 }

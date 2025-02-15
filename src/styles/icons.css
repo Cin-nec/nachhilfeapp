@@ -1,4 +1,4 @@
-.icon--button {
+.icon__button {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 0.5rem;
@@ -11,7 +11,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.icon--button:hover {
+.icon__button:hover {
     font-size: 1.15rem;
     transform: translateY(-0.25rem);
 }

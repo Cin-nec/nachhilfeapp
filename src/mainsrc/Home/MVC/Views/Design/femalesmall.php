@@ -1,4 +1,4 @@
-<svg width="100%" height="100%" viewBox="0 0 250 315" class="angebot--teilnehmer-icon">
+<svg width="100%" height="100%" viewBox="0 0 250 315" class="angebot__teilnehmer-icon">
     <g id="girl_1_full">
         <g transform="matrix(1,0,0,1,-953.165,-1720.5)">
             <path d="M1078.17,1862C1080.38,1862 1082.17,1860.21 1082.17,1858L1082.17,1842C1082.17,1839.79 1080.38,1838 1078.17,1838C1075.95,1838 1074.17,1839.79 1074.17,1842L1074.17,1858C1074.17,1860.21 1075.95,1862 1078.17,1862Z" style="fill-rule:nonzero;"/>
