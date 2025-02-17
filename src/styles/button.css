@@ -1,3 +1,9 @@
+/*
+  Datei: button.css
+  Beschreibung: Enthält alle Styles zu den primären Text-Buttons, spezialisierte Buttons in entsprechenden CSS-Dateien zu den Seiten
+  Letzte Überarbeitung: 17.02.25 - 20:37
+ */
+
 .button__border--big {
     margin-top: 3rem;
     height: 3rem;

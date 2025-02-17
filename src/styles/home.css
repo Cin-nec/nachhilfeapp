@@ -1,3 +1,9 @@
+/*
+  Datei: home.css
+  Beschreibung: Enthält alle Styles zur home.php - d.h. zur ersten Seite nach dem Login("Startseite")
+  Letzte Überarbeitung: 17.02.25 - 20:31
+ */
+
 .header__container {
     width: 80%;
     margin-left: 10%;

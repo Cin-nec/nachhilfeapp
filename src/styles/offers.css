@@ -1,3 +1,9 @@
+/*
+  Datei: offers.css
+  Beschreibung: Enthält alle Styles zur offers.php, es handelt sich um ein Grid-System um die Angebote(offene, gebuchte, ...) anzuzeigen
+  Letzte Überarbeitung: 17.02.25 - 20:33
+ */
+
 .offers__container {
     width: 100%;
     padding: 3rem;

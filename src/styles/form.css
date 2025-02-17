@@ -1,3 +1,9 @@
+/*
+  Datei: form.css
+  Beschreibung: Enthält alle Styles zu den Formular-Elementen
+  Letzte Überarbeitung: 17.02.25 - 20:38
+ */
+
 input[type="radio"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
