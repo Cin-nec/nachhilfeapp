@@ -1,3 +1,9 @@
+/*
+  Datei: footer.css
+  Beschreibung: Enthält alle Styles zur home.php - d.h. zur ersten Seite nach dem Login("Startseite")
+  Letzte Überarbeitung: 17.02.25 - 20:31
+ */
+
 .footer {
     width: 100%;
     height: 15rem;
@@ -9,36 +15,36 @@
     bottom: 0;
 }
 
-.footer--heading {
+.footer__heading {
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: normal;
 }
 
-.footer--subheading {
+.footer__subheading {
     color: #ffffff;
     font-size: 1rem;
     margin-top: 0.2rem;
     margin-bottom: 1rem;
 }
 
-.footer--link {
+.footer__link {
     color: #ffffff;
 }
 
-.footer--profil {
+.footer__profil {
     margin-top: 8rem;
     width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
-    .footer--profil {
+    .footer__profil {
         margin-top: 20rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .footer--subheading {
+    .footer__subheading {
         text-align: center;
     }
 }

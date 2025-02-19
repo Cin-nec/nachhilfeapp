@@ -18,8 +18,8 @@ $permission = $_SESSION["userPermission"];
 <header>
     <nav class="nav">
         <h2 class="nav--heading">TeachGym</h2>
-        <h2 class="nav--heading nav--heading-small">TG</h2>
-        <form method="post" class="nav--explore">
+        <h2 class="nav--heading nav__heading--small">TG</h2>
+        <form method="post" class="nav__explore">
             <?php if($permission == "teacher"){ ?>
             <button name="changeView" value="teacher" type="submit" class="nav--switch border--left">
                 Schüler
@@ -36,13 +36,13 @@ $permission = $_SESSION["userPermission"];
             </button>
             <?php } ?>
         </form>
-        <div class="icon--button nav--explore-toggle" onclick="openPopupToggle()"><i class="fa-solid fa-repeat"></i></div>
-        <div class="icon--button nav--notification" onclick="openLogPopup()"><div class="icon--button-new <?php if(!empty($logDelivered)){ ?>icon--button-new-active<?php } ?>"></div><i class="fa-regular fa-bell"></i></div>
-        <div class="icon--button icon--button-profil nav--profil"><i class="fa-regular fa-user"></i></div>
+        <div class="icon--button nav__explore-toggle" onclick="openPopupToggle()"><i class="fa-solid fa-repeat"></i></div>
+        <div class="icon--button nav__notification" onclick="openLogPopup()"><div class="icon__button--new <?php if(!empty($logDelivered)){ ?>icon--button-new-active<?php } ?>"></div><i class="fa-regular fa-bell"></i></div>
+        <div class="icon--button icon--button-profil nav__profil"><i class="fa-regular fa-user"></i></div>
         <a href="/logout" class="nav--username" >Logout</a>
     </nav>
     <div class="header--container">
-        <div class="header--content">
+        <div class="header__content">
             <h2 class="header--content-heading">Hallo <?php echo $username ?></h2>
             <p class="header--content-text">Schon etwas neues zum Lernen gefunden? Oder möchtest du eigene Nachhilfe anbieten? </p>
             <?php if($permission == "teacher"){ ?>
@@ -58,64 +58,64 @@ $permission = $_SESSION["userPermission"];
 </header>
 <?php if($permission == "simple"){ ?>
         <!-- angefragte Angebote -->
-<section style="margin-top: 7rem" class="angebote--booked angebote--booked-home">
-    <h1 class="angebote--booked-heading">Ausstehende Anfragen an Angebote</h1>
-    <div class="angebote--booked-list angebote--booked-list-home">
+<section style="margin-top: 7rem" class="angebote__booked angebote__booked-home">
+    <h1 class="angebote__booked-heading">Ausstehende Anfragen an Angebote</h1>
+    <div class="angebote__booked-list angebote__booked-list--home">
         <?php if(!empty($angefragteOffer)) {
             $angefragteOffer = array_slice($angefragteOffer, 0, 3);
         ?>
             <?php foreach ($angefragteOffer as $item): ?>
-                <div class="angebote--booked-item angebote--booked-item-home">
-                    <div class="<?php echo "$item->fach" . "-bg" ?> angebote--booked-wrapper">
-                        <div class="angebote--booked-icon">
+                <div class="angebote__booked-item angebote__booked-item--home">
+                    <div class="<?php echo ">
+                        <div class="angebote__booked-icon">
                             <?php include __DIR__ . "/Design/$item->fach.php"?>
                         </div>
                     </div>
-                    <div class="angebote--booked-class"><?php echo ucfirst($item->fach);?></div>
-                    <div class="angebote--booked-name"><?php echo ucfirst($item->lehrer);?></div>
-                    <div class="angebote--booked-age"><?php echo "$item->jahrgang" . ".Klasse"?></div>
-                    <div class="angebote--booked-status">Anfrage: <span class="angebote--booked-ausstehend">Ausstehend</span></div>
-                    <div class="angebote--booked-button">
-                        <a style="text-decoration: none" href="/angeboteAngefragtDetails?id=<?php echo $item->id ?>" class="angebote--booked-link angebote--item-status">Zum Angebot</a>
+                    <div class="angebote__booked-class"><?php echo ucfirst($item->fach);?></div>
+                    <div class="angebote__booked-name"><?php echo ucfirst($item->lehrer);?></div>
+                    <div class="angebote__booked-age"><?php echo "$item->jahrgang" . ".Klasse"?></div>
+                    <div class="angebote__booked-status">Anfrage: <span class="angebote__booked-ausstehend">Ausstehend</span></div>
+                    <div class="angebote__booked-button">
+                        <a style="text-decoration: none" href="/angeboteAngefragtDetails?id=<?php echo $item->id ?>" class="angebote__booked-link angebote--item-status">Zum Angebot</a>
                     </div>
                 </div>
             <?php endforeach; ?>
         <?php } else { ?>
-            <h2 class="angebote--heading-not-found angebote--heading-not-found-white">Keine bisherigen Anfragen</h2>
+            <h2 class="angebote__heading--not-found angebote__heading--not-found-white">Keine bisherigen Anfragen</h2>
         <?php } ?>
     </div>
-    <a class="angebote--booked-more angebote--link" href="/angeboteAngefragt">Alle ansehen...</a>
+    <a class="angebote__booked-more angebote__link" href="/angeboteAngefragt">Alle ansehen...</a>
 </section>
 <!-- hier sind die, die man selber gebucht hat -->
 <section class="angebote--main">
     <div class="angebote--divider" style="border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; display: flex; align-items: center; justify-content: center; padding-left: 0">
-        <h1 class="angebote--booked-heading" style="text-align: center; color: #374151">Gebuchte Angebote</h1>
+        <h1 class="angebote__booked-heading" style="text-align: center; color: #374151">Gebuchte Angebote</h1>
     </div>
-    <section class="angebote--grid angebote--grid-booked">
-        <div class="angebote--grid-hidden angebote--grid-hidden-home">
+    <section class="angebote--grid angebote__grid--booked">
+        <div class="angebote__grid--hidden angebote__grid--hidden-home">
             <?php if(!empty($gebuchteAngebote)){?>
                 <?php foreach ($gebuchteAngebote as $item):
                     ?>
                     <div class="angebote--item">
-                        <div class="<?php echo "$item->fach" . "-bg" ?> angebote--item-header">
-                            <div class="angebote--item-icon">
+                        <div class="<?php echo ">
+                            <div class="angebote__item-icon">
                                 <?php include __DIR__ . "/Design/$item->fach.php"?>
                             </div>
                         </div>
-                        <div class="angebote--item-content">
+                        <div class="angebote__item-content">
                             <h2 class="angebote--item-heading" style="margin-bottom: 0.5rem"><?php echo ucfirst($item->fach) ?></h2>
-                            <p class="angebote--item-booked-name" style="font-weight: bold;"><?php echo ucfirst($item->lehrer) ?></p>
-                            <p class="angebote--item-booked-name"><?php echo "$item->jahrgang" . ".Klasse"?></p>
+                            <p class="angebote__item-booked-name" style="font-weight: bold;"><?php echo ucfirst($item->lehrer) ?></p>
+                            <p class="angebote__item-booked-name"><?php echo "$item->jahrgang" . ".Klasse"?></p>
                             <div class="angebote--item-status angebote--item-status-belegt" style="margin-top: 0.5rem;">Gebucht</div>
-                            <a href="/angeboteGebuchtDetails?id=<?php echo $item->id;?>" style="margin-top: 1rem" class="angebote--item-button">Übersicht</a>
+                            <a href="/angeboteGebuchtDetails?id=<?php echo $item->id;?>" style="margin-top: 1rem" class="angebote__item-button">Übersicht</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
             <?php } else { ?>
-                <h2 class="angebote--heading-not-found grid--middle">Bisher keine Angebote gebucht</h2>
+                <h2 class="angebote__heading--not-found grid--middle">Bisher keine Angebote gebucht</h2>
             <?php } ?>
         </div>
-        <a href="/angeboteGebucht" class="angebote--booked-more angebote--link">Alle ansehen...</a>
+        <a href="/angeboteGebucht" class="angebote__booked-more angebote__link">Alle ansehen...</a>
     </section>
     <div style="border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem" class="angebote--divider"></div>
     <?php if(empty($gebuchteAngebote) and empty($lehrerAngebote)) { ?>
@@ -133,44 +133,44 @@ $permission = $_SESSION["userPermission"];
         <h1 class="angebote--heading">Hier unterrichte ich</h1>
     </div>
     <?php if(!empty($lehrerAngebote)){ ?>
-    <section class="angebote--grid angebote--grid-teacher angebote--grid-teacher-home">
-        <div class="angebote--grid-hidden angebote--grid-hidden-home" >
+    <section class="angebote--grid angebote__grid--teacher angebote__grid--teacher-home">
+        <div class="angebote__grid--hidden angebote__grid--hidden-home" >
         <?php foreach ($lehrerAngebote as $item): ?>
         <div class="angebote--item">
-            <div class="<?php echo "$item->fach" . "-bg" ?> angebote--item-header">
-                <div class="angebote--item-icon">
+            <div class="<?php echo ">
+                <div class="angebote__item-icon">
                     <?php include __DIR__ . "/Design/$item->fach.php"?>
                 </div>
             </div>
-            <div class="angebote--item-content">
+            <div class="angebote__item-content">
                 <h2 class="angebote--item-heading"><?php echo ucfirst($item->fach) ?> Kurs</h2>
                 <div class="angebote--item-status angebote--item-status-belegt"><?php echo ucfirst($item->status) ?></div>
-                <a href="/angeboteLehrerDetails?id=<?php echo "$item->id" ?>" class="angebote--item-button">Übersicht</a>
+                <a href="/angeboteLehrerDetails?id=<?php echo "$item->id" ?>" class="angebote__item-button">Übersicht</a>
             </div>
         </div>
         <?php endforeach; ?>
         </div>
         <?php if(!empty($lehrerAngebote) && count($lehrerAngebote) != 0){ ?>
-            <a href="/angeboteLehrer" class="angebote--link angebote--booked-more">Alle ansehen...</a>
+            <a href="/angeboteLehrer" class="angebote__link angebote__booked-more">Alle ansehen...</a>
         <?php } else { ?>
-            <a href="/angeboteLehrer" class="angebote--link angebote--booked-more">Angebot erstellen...</a>
+            <a href="/angeboteLehrer" class="angebote__link angebote__booked-more">Angebot erstellen...</a>
         <?php } ?>
     </section>
     <?php } else { ?>
         <div class="angebote--grid" style="display: flex; align-items: center; justify-content: center">
-            <a href="/angeboteLehrer" class="angebote--link angebote--booked-more">Angebot erstellen...</a>
+            <a href="/angeboteLehrer" class="angebote__link angebote__booked-more">Angebot erstellen...</a>
         </div>
     <?php } ?>
 </main>
 <?php } ?>
 
-<section id="toggleView" class="popup--hide popup--container-medium popup--container-small popup--container-right">
-    <div onclick="closePopupToggle()" class="popup--container-icon"><i class="fa-solid fa-x"></i></div>
-    <div class="popup--container-header">
-        <h2 class="popup--container-heading">Ansicht wechseln</h2>
+<section id="toggleView" class="popup--hide popup__ontainer--medium popup__container--small popup--container-right">
+    <div onclick="closePopupToggle()" class="popup__container-icon"><i class="fa-solid fa-x"></i></div>
+    <div class="popup__container-header">
+        <h2 class="popup__container-heading">Ansicht wechseln</h2>
     </div>
     <form method="post" style="display: flex; flex-direction: row; align-items: center; justify-content: center">
-        <div class="popup--sub-nav-container" >
+        <div class="popup__sub-nav-container" >
             <?php if($permission == "teacher"){ ?>
                 <button name="changeView" value="teacher" type="submit" class="nav--switch border--left">
                     Schüler
@@ -191,7 +191,7 @@ $permission = $_SESSION["userPermission"];
 </section>
 
 <?php require_once __DIR__ . "/../../../App/Base/footer.php"; ?>
-<div id="angebotLehrerOverlay" class="popup--hide popup--overlay"></div>
+<div id="angebotLehrerOverlay" class="popup--hide popup__overlay"></div>
 <?php require_once __DIR__ . "/../../../App/Base/logInfo.php"; ?>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a043dc9ebd.js" crossorigin="anonymous"></script>

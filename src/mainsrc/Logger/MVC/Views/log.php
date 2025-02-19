@@ -17,9 +17,9 @@ $permission = $_SESSION["userPermission"];
 <header>
     <nav class="nav">
         <h2 class="nav--heading">TeachGym</h2>
-        <h2 class="nav--heading nav--heading-small">TG</h2>
-        <div class="icon--button icon--button-log nav--notification" onclick="setHeaderLocation()" ><div class="icon--button-new <?php if(!empty($logDelivered)){ ?>icon--button-new-active<?php } ?>"></div><i class="fa-regular fa-bell"></i></div>
-        <div class="icon--button icon--button-profil nav--profil" ><i class="fa-regular fa-user"></i></div>
+        <h2 class="nav--heading nav__heading--small">TG</h2>
+        <div class="icon--button icon--button-log nav__notification" onclick="setHeaderLocation()" ><div class="icon__button--new <?php if(!empty($logDelivered)){ ?>icon--button-new-active<?php } ?>"></div><i class="fa-regular fa-bell"></i></div>
+        <div class="icon--button icon--button-profil nav__profil" ><i class="fa-regular fa-user"></i></div>
         <a href="/logout" class="nav--username" >Logout</a>
     </nav>
 </header>
@@ -28,31 +28,31 @@ $permission = $_SESSION["userPermission"];
     <?php if(!empty($logDelivered) or !empty($logRead)){ ?>
         <?php if(!empty($logDelivered)){ ?>
     <h2 class="logger--sub-heading">Neue Benachrichtigungen (<?php echo count($logDelivered) ?>)</h2>
-    <div class="logger--list">
+    <div class="logger__list">
         <?php foreach ($logDelivered as $item): ?>
             <?php if($item->category == "akzeptiert"){?>
-                <div class="logger--container logger--container-delivered">
+                <div class="logger__container logger__container-delivered">
                     <p class="logger--text">Deine Anfrage bei <?php echo $item->contentHeader ?> im <?php echo ucfirst($item->contentBody) ?>-Angebot wurde akzeptiert. <a href="/angeboteGebuchtDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                     <form method="post">
                         <button name="notificationRead" value="<?php echo $item->id ?>" class="logger--button">Gelesen</button>
                     </form>
                 </div>
             <?php } elseif($item->category == "abgelehnt"){?>
-                <div class="logger--container logger--container-delivered">
+                <div class="logger__container logger__container-delivered">
                     <p class="logger--text">Deine Anfrage bei <?php echo $item->contentHeader ?> im <?php echo ucfirst($item->contentBody) ?>-Angebot wurde abgelehnt. <a href="/angeboteOffenDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                     <form method="post">
                         <button name="notificationRead" value="<?php echo $item->id ?>" class="logger--button">Gelesen</button>
                     </form>
                 </div>
             <?php } elseif($item->category == "beendet"){?>
-                <div class="logger--container logger--container-delivered">
+                <div class="logger__container logger__container-delivered">
                     <p class="logger--text">Die Nachhilfe bei <?php echo $item->contentHeader ?> im <?php echo ucfirst($item->contentBody) ?>-Angebot wurde beendet. <a href="/angeboteOffenDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                     <form method="post">
                         <button name="notificationRead" value="<?php echo $item->id ?>" class="logger--button">Gelesen</button>
                     </form>
                 </div>
             <?php } elseif($item->category == "angefragt"){?>
-                <div class="logger--container logger--container-delivered">
+                <div class="logger__container logger__container-delivered">
                     <p class="logger--text"><?php echo $item->contentHeader ?> hat dein <?php echo ucfirst($item->contentBody) ?>-Angebot angefragt. <a href="/angeboteLehrerDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                     <form method="post">
                         <button name="notificationRead" value="<?php echo $item->id ?>" class="logger--button">Gelesen</button>
@@ -64,22 +64,22 @@ $permission = $_SESSION["userPermission"];
         <?php }?>
         <?php if (!empty($logRead)){ ?>
     <h2 class="logger--sub-heading">Alte Benachrichtigungen</h2>
-    <div class="logger--list">
+    <div class="logger__list">
         <?php foreach ($logRead as $item): ?>
             <?php if($item->category == "akzeptiert"){?>
-                <div class="logger--container logger--container-read">
+                <div class="logger__container logger__container-read">
                     <p class="logger--text">Deine Anfrage bei <?php echo $item->contentHeader ?> im <?php echo ucfirst($item->contentBody) ?>-Angebot wurde akzeptiert. <a href="/angeboteGebuchtDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                 </div>
             <?php } elseif($item->category == "abgelehnt"){?>
-                <div class="logger--container logger--container-read">
+                <div class="logger__container logger__container-read">
                     <p class="logger--text">Deine Anfrage bei <?php echo $item->contentHeader ?> im <?php echo ucfirst($item->contentBody) ?>-Angebot wurde abgelehnt. <a href="/angeboteOffenDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                 </div>
             <?php } elseif($item->category == "beendet"){?>
-                <div class="logger--container logger--container-read">
+                <div class="logger__container logger__container-read">
                     <p class="logger--text">Die Nachhilfe bei <?php echo $item->contentHeader ?> im <?php echo ucfirst($item->contentBody) ?>-Angebot wurde beendet. <a href="/angeboteOffenDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                 </div>
             <?php } elseif($item->category == "angefragt"){?>
-                <div class="logger--container logger--container-read">
+                <div class="logger__container logger__container-read">
                     <p class="logger--text"><?php echo $item->contentHeader ?> hat dein <?php echo ucfirst($item->contentBody) ?>-Angebot angefragt. <a href="/angeboteLehrerDetails?id=<?php echo $item->sender ?>" class="logger--link">Klicke für mehr Informationen.</a></p>
                 </div>
             <?php } ?>
@@ -87,7 +87,7 @@ $permission = $_SESSION["userPermission"];
     </div>
         <?php } ?>
     <?php } else { ?>
-        <p class="logger--error">Du hast keine Benachrichtigungen.</p>
+        <p class="logger__error">Du hast keine Benachrichtigungen.</p>
     <?php } ?>
 </main>
 <?php require_once __DIR__ . "/../../../App/Base/footer.php"; ?>

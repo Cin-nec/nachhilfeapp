@@ -20,19 +20,19 @@
 <body style="background-color: #374151">
 <header>
     <nav class="nav">
-        <h2 class="nav--heading">TeachGym</h2>
-        <h2 class="nav--heading nav--heading-small">TG</h2>
+        <h2 class="nav__heading">TeachGym</h2>
+        <h2 class="nav__heading nav__heading--small">TG</h2>
         <!--<div class="nav--explore nav--explore-small">Wechsel <i style="margin-left: 0.75rem" class="fa-solid fa-caret-left"></i></div>-->
-        <div class="icon--button nav--notification"><i class="fa-regular fa-bell"></i></div>
-        <div class="icon--button nav--profil"><i class="fa-regular fa-user"></i></div>
-        <p class="nav--username">Maurice</p>
+        <div class="icon__button nav__notification"><i class="fa-regular fa-bell"></i></div>
+        <div class="icon__button nav__profil"><i class="fa-regular fa-user"></i></div>
+        <p class="nav__username">Maurice</p>
     </nav>
 </header>
-<main class="profil--main">
-    <div class="profil--card">
-        <div class="profil--card-header">
-            <div class="profil--card-imageBox">
-                <svg class="profil--card-image" viewBox="0 0 250 315">
+<main class="profil__main">
+    <div class="profil__card">
+        <div class="profil__card-header">
+            <div class="profil__card-imageBox">
+                <svg class="profil__card-image" viewBox="0 0 250 315">
                     <g id="girl_1_full">
                         <g transform="matrix(1,0,0,1,-953.165,-1720.5)">
                             <path d="M1078.17,1862C1080.38,1862 1082.17,1860.21 1082.17,1858L1082.17,1842C1082.17,1839.79 1080.38,1838 1078.17,1838C1075.95,1838 1074.17,1839.79 1074.17,1842L1074.17,1858C1074.17,1860.21 1075.95,1862 1078.17,1862Z" />
@@ -60,47 +60,47 @@
             </div>
         </div>
         <div>
-            <h1 class="profil--card-name">Sophie</h1>
-            <p class="profil--card-geschlecht">Weiblich</p>
+            <h1 class="profil__card-name">Sophie</h1>
+            <p class="profil__card-geschlecht">Weiblich</p>
         </div>
-        <form class="profil--card-form">
-                <div class="profil--card-form-group">
-                    <label class="form--input-label-small" for="profilName">Name</label>
-                    <input style="margin-top: 0.2rem" class="form--input-text-small" id="profilName" type="text" placeholder="Sophie">
+        <form class="profil__card-form">
+                <div class="profil__card-form-group">
+                    <label class="form__input--label-small" for="profilName">Name</label>
+                    <input style="margin-top: 0.2rem" class="form__input--text-small" id="profilName" type="text" placeholder="Sophie">
                 </div>
-                <div class="profil--card-form-group" style="margin-top: 1rem">
-                    <label class="form--input-label-small">Geschlecht</label>
-                    <label for="männlich" style="margin-top: 0.2rem;" class="profil--card-form-control">
+                <div class="profil__card-form-group" style="margin-top: 1rem">
+                    <label class="form__input--label-small">Geschlecht</label>
+                    <label for="männlich" style="margin-top: 0.2rem;" class="profil__card-form-control">
                         <input type="radio" id="männlich" name="geschlecht" value="männlich">
                         <label style="cursor: pointer" for="männlich">Männlich</label>
                     </label>
-                    <label for="weiblich" style="margin-top: 0.2rem" class="profil--card-form-control">
+                    <label for="weiblich" style="margin-top: 0.2rem" class="profil__card-form-control">
                         <input type="radio" id="weiblich" name="geschlecht" value="weiblich">
                         <label style="cursor: pointer" for="weiblich">Weiblich</label>
                     </label>
                 </div>
-                <div class="profil--card-form-group" style="margin-top: 1rem">
-                    <label class="form--input-label-small" for="profilKlasse">Klasse</label>
+                <div class="profil__card-form-group" style="margin-top: 1rem">
+                    <label class="form__input--label-small" for="profilKlasse">Klasse</label>
                     <div style="display: flex; align-items: center">
-                        <input class="form--input-range" id="profilKlasse" value="6" type="range" min="5" max="13">
-                        <div id="profilSliderValue" class="form--input-range-value">5</div>
+                        <input class="form__input--range" id="profilKlasse" value="6" type="range" min="5" max="13">
+                        <div id="profilSliderValue" class="form__input--range-value">5</div>
                     </div>
                 </div>
-                <div class="profil--card-form-group profil--card-button-group">
+                <div class="profil__card-form-group profil__card-button-group">
                     <button type="submit" class="button--submit">
-                        <i class="btn-submit-icon fa-regular fa-paper-plane"></i><p class="btn-submit-text">Speichern</p>
+                        <i class="button--submit-icon fa-regular fa-paper-plane"></i><p class="btn-submit-text">Speichern</p>
                     </button>
                     <button type="reset" class="button--reset button--margin-left">
-                        <i class="btn-reset-icon fa-solid fa-x"></i><p class="btn-reset-text">Abbrechen</p>
+                        <i class="button--reset__icon fa-solid fa-x"></i><p class="btn-reset-text">Abbrechen</p>
                     </button>
                 </div>
             </form>
     </div>
-    <div class="profil--card-more">
-        <h2 class="profil--card-more-heading">Wichtiges</h2>
-        <a class="profil--card-more-link" href="#">Gebuchte Angebote</a>
-        <a class="profil--card-more-link" href="#">Angebote von mir</a>
-        <a class="profil--card-more-link" href="#">Postfach</a>
+    <div class="profil__card-more">
+        <h2 class="profil__card-more-heading">Wichtiges</h2>
+        <a class="profil__card-more-link" href="#">Gebuchte Angebote</a>
+        <a class="profil__card-more-link" href="#">Angebote von mir</a>
+        <a class="profil__card-more-link" href="#">Postfach</a>
     </div>
 </main>
 <script src="profil.js"></script>

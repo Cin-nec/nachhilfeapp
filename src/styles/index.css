@@ -1,3 +1,9 @@
+/*
+  Datei: index.css
+  Beschreibung: Enthält alle Styles zur home.php - d.h. zur ersten Seite nach dem Login("Startseite")
+  Letzte Überarbeitung: 17.02.25 - 20:31
+ */
+
 body {
     background-color: #ffffff;
     height: 100vh;
@@ -54,7 +60,7 @@ body {
     color: #ffffff;
 }
 
-.footer--link {
+.footer__link {
     color: #ffffff;
     font-size: 1.1rem;
 }

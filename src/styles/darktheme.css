@@ -1,3 +1,9 @@
+/*
+  Datei: darktheme.css
+  Beschreibung: Enthält das dunkle Layout für die Lehreransicht
+  Letzte Überarbeitung: 17.02.25 - 20:38
+ */
+
 body {
     background-color: #455266;
 }
@@ -15,49 +21,49 @@ body {
 }
 
 /** Home - Header **/
-.header--container {
+.header__container {
     background-color:  #374151;
 }
 
-.header--content-heading {
+.header__content-heading {
     color: #ffffff;
 }
 
-.header--content-text {
+.header__content-text {
     color: #ffffff;
 }
 
-.header--picture {
+.header__picture {
     border-color: #ffffff;
 }
 
 /** Home - Angebote Lehrer **/
-.angebote--main {
+.angebote__main {
     background-color: #455266;
 }
 
-.angebote--heading {
+.angebote__heading {
     color: #ffffff;
 }
 
-.angebote--grid {
+.angebote__grid {
     background-color: #374151;
 }
 
-.angebote--divider {
+.angebote__divider {
     background-color: #374151;
 }
 
-.angebote--item {
+.angebote__item {
     background-color: #455266;
 }
 
-.angebote--item-status {
+.angebote__item-status {
     color: #ffffff;
     border-color: #ffffff;
 }
 
-.angebote--item-heading {
+.angebote__item-heading {
     color: #ffffff;
 }
 
@@ -67,24 +73,24 @@ body {
     background-color: #455266;
 }
 
-.nav--heading {
+.nav__heading {
     color: #ffffff;
 }
 
-.nav--username {
+.nav__username {
     color: #ffffff;
 }
 
-.nav--sub {
+.nav__sub {
     background-color: #172029;
 }
 
-.nav--switch {
+.nav__switch {
     color: #ffffff;
     border: 0.1rem solid #ffffff;
 }
 
-.nav--switch-active {
+.nav__switch--active {
     cursor: initial;
     border: 0.1rem solid #5853F5;
     color: #5853F5;
@@ -92,25 +98,25 @@ body {
 
 /** Buttons **/
 
-.button--border-big {
+.button__border--big {
     border-color: #5853F5;
     outline-color: #5853F5;
     color: #5853F5;
     background-color: transparent;
 }
 
-.button--border-big:hover {
+.button__border--big:hover {
     border-color: #5853F5;
     outline-color: #374151;
 }
 
-.button--border-big-inner {
+.button__border--big-inner {
     color: #5853F5;
 }
 
 /** Icons **/
 
-.icon--button {
+.icon__button {
     background-color: #374151;
     color: #ffffff;
 }
@@ -123,60 +129,60 @@ body {
 
 /** Profil **/
 
-.profil--card {
+.profil__card {
     background-color: #455266;
 }
 
 
-.profil--card-image {
+.profil__card-image {
     background-color: #374151;
     stroke: #5853F5;
     fill: #5853F5
 }
 
-.profil--card-name {
+.profil__card-name {
     color: #ffffff;
 }
 
-.profil--card-geschlecht {
+.profil__card-geschlecht {
     color: #ffffff;
 }
 
-.profil--card-form-control {
+.profil__card-form-control {
     color: #ffffff;
 }
 
-.profil--card-more {
+.profil__card-more {
     background-color: #455266;
 }
 
-.profil--card-more-heading {
+.profil__card-more-heading {
     color: #ffffff;
 }
 
 /** Form **/
 
-.form--input-label-small {
+.form__input--label-small {
     color: #ffffff;
 }
 
-.form--input-text-small {
+.form__input--text-small {
     border-color: #ffffff;
     color: #ffffff;
     background-color: transparent;
 }
 
-.form--input-text-small::placeholder {
+.form__input--text-small::placeholder {
     color: #ffffff;
 }
 
 /** Logger **/
 
-.logger--heading {
+.logger__heading {
     color: #ffffff;
 }
 
-.logger--sub-heading {
+.logger__sub-heading {
     color: #5853F5;
 }
 
@@ -184,46 +190,46 @@ body {
     color: #ffffff;
 }
 
-.logger--link {
+.logger__link {
     color: #5853F5;
 }
 
-.logger--button {
+.logger__button {
     background-color: #5853F5;
 }
 
 /** Offer - Details **/
 
-.angebot--wrapper {
+.angebot__wrapper {
     background-color: #455266;
 }
 
-.angebot--content {
+.angebot__content {
     background-color: #455266;
 }
 
-.angebot--fach {
+.angebot__fach {
     color: #ffffff;
 }
 
-.angebot--value {
+.angebot__value {
     color: #ffffff;
 }
 
-.angebot--teilnehmer {
+.angebot__teilnehmer {
     background-color: #455266;
 }
 
-.angebot--teilnehmer-heading {
+.angebot__teilnehmer-heading {
     color: #ffffff;
 }
 
-.angebot--teilnehmer-list {
+.angebot__teilnehmer-list {
     color: #ffffff;
     background-color: #455266;
 }
 
-.angebot--contact-explanation {
+.angebot__contact-explanation {
     color: #ffffff;
 }
 
@@ -231,16 +237,16 @@ body {
     color: #ffffff;
 }
 
-.angebot--contact-heading {
+.angebot__contact-heading {
     color: #ffffff;
 }
 
-.angebot--contact-edit {
+.angebot__contact-edit {
     color: #ffffff;
     border-color: #ffffff;
 }
 
-.angebot--contact-edit:hover {
+.angebot__contact-edit:hover {
     background-color: #ffffff;
     color: #374151;
 }

@@ -1,4 +1,4 @@
-document.querySelectorAll('.nav--heading').forEach((item) => {
+document.querySelectorAll('.nav__heading').forEach((item) => {
     item.addEventListener('click', () => {
         window.location = 'https://cinnec.de/home';
     })

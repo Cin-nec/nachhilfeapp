@@ -1,18 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+  Datei: login.css
+  Beschreibung: Enthält alle Styles zur login.php
+  Letzte Überarbeitung: 17.02.25 - 20:57
+ */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Jost', sans-serif;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-}
-
-.login--main {
+.login__main {
     width: 100%;
     height: 100vh;
     background-color: #5853F5;
@@ -21,7 +13,7 @@ body {
     justify-content: center;
 }
 
-.login--container {
+.login__container {
     width: 70%;
     height: 40rem;
     background-color: #fff;
@@ -30,12 +22,12 @@ body {
     align-items: center;
 }
 
-.login--container-small {
+.login__container--small {
     width: 30rem;
     height: 20rem;
 }
 
-.login--container-contentholder {
+.login__container-contentholder {
     width: calc(40% - 0.5rem);
     margin-left: 0.5rem;
     height: calc(100% - 1rem);
@@ -49,7 +41,7 @@ body {
     padding-left: 1.5rem;
 }
 
-.login--container-contentholder-small {
+.login__container-contentholder--small {
     width: 30rem;
     height: 100%;
     display: flex;
@@ -58,24 +50,24 @@ body {
     margin: 0;
 }
 
-.login--container-contentholder-heading {
+.login__container-contentholder-heading {
     color: #374151;
     font-size: 2.2rem;
     letter-spacing: 0.02rem;
     font-weight: 600;
 }
 
-.login--container-contentholder-subtitle {
+.login__container-contentholder-subtitle {
     color: #374151;
 }
 
-.login--link {
+.login__link {
     color: #5853F5;
     cursor: pointer;
     text-decoration: none;
 }
 
-.login--link-small {
+.login__link--small {
     color: #5853F5;
     cursor: pointer;
     display: block;
@@ -83,53 +75,53 @@ body {
     margin-top: 0.35rem;
 }
 
-.login--container-pictureholder {
+.login__container-pictureholder {
     width: 55%;
     height: 80%;
     margin-left: 2.5%;
 }
 
-.login--form {
+.login__form {
     display: flex;
     flex-direction: column;
 }
 
 @media only screen and (max-width: 440px) {
-    .login--container-contentholder {
+    .login__container-contentholder {
         padding-left: 0.5rem;
     }
 }
 
 @media only screen and (min-width: 100px) and (max-width: 900px) {
-    .login--container-contentholder {
+    .login__container-contentholder {
         width: calc(100% - 1rem);
         margin: 0;
     }
 
-    .login--container-pictureholder {
+    .login__container-pictureholder {
         display: none;
     }
 
-    .login--container {
+    .login__container {
         width: 90%;
         justify-content: center;
     }
 
-    .login--container-small {
+    .login__container--small {
         width: 30rem;
     }
 
-    .login--container-contentholder-small {
+    .login__container-contentholder--small {
         width: 30rem;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .login--container-small {
+    .login__container--small {
         width: 90%;
     }
 
-    .login--container-contentholder-small {
+    .login__container-contentholder--small {
         width: 100%;
     }
 
@@ -139,7 +131,7 @@ body {
 }
 
 @media only screen and (max-width: 900px) and (min-width: 600px){
-    .login--container-pictureholder {
+    .login__container-pictureholder {
         display: flex;
         justify-content: center;
         width: 40%;
@@ -147,53 +139,53 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
-    .login--container-contentholder {
+    .login__container-contentholder {
         width: 50%;
     }
 
-    .login--container-pictureholder {
+    .login__container-pictureholder {
         display: flex;
         justify-content: center;
         width: 40%;
     }
 
-    .login--container {
+    .login__container {
         width: 90%;
     }
 
-    .login--container-small {
+    .login__container--small {
         width: 30rem;
     }
 
-    .login--container-contentholder-small {
+    .login__container-contentholder--small {
         width: 30rem;
     }
 }
 
 @media only screen and (min-width: 990px){
-    .login--container {
+    .login__container {
         width: 90%;
     }
 
-    .login--container-small {
+    .login__container--small {
         width: 30rem;
     }
 
-    .login--container-contentholder-small {
+    .login__container-contentholder--small {
         width: 30rem;
     }
 }
 
 @media only screen and (min-width: 1200px){
-    .login--container {
+    .login__container {
         width: 61.438rem;
     }
 
-    .login--container-small {
+    .login__container--small {
         width: 30rem;
     }
 
-    .login--container-contentholder-small {
+    .login__container-contentholder--small {
         width: 30rem;
     }
 }

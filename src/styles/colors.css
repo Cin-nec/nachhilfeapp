@@ -1,3 +1,9 @@
+/*
+  Datei: colors.css
+  Beschreibung: Enthält jede Farbe der einzelnen Fächer, bei Farbänderung lediglich den Farbcode anpassen
+  Letzte Überarbeitung: 17.02.25 - 20:37
+ */
+
 .mathe-bg {
     background-color: #D2212B;
 }

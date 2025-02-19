@@ -1,26 +1,8 @@
-.nav--sub {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: #374151;
-    height: 2.5rem;
-    align-items: center;
-    padding-left: 3rem;
-}
-
-.nav--sub-action {
-    padding: 0.2em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: #ffffff;
-
-}
-
-.nav--sub-action:hover {
-    animation: bounce 1s;
-}
+/*
+  Datei: offerDetails.css
+  Beschreibung: Enthält die Styles zu den detaillierten Angebots-Ansichten - d.h. zu bookedOffersDetails, ownOfferDetails, ...
+  Letzte Überarbeitung: 17.02.25 - 20:35
+ */
 
 @keyframes bounce {
     0%, 20%, 60%, 100% {
@@ -39,14 +21,14 @@
     }
 }
 
-.angebot--main {
+.angebot__main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 6rem;
 }
 
-.angebot--wrapper {
+.angebot__wrapper {
     margin-top: 6rem;
     width: 23rem;
     height: 25rem;
@@ -54,7 +36,7 @@
     border-radius: 0.5rem;
 }
 
-.angebot--header {
+.angebot__header {
     width: 100%;
     height: 10rem;
     border-top-right-radius: 0.5em;
@@ -64,7 +46,7 @@
     justify-content: center;
 }
 
-.angebot--header-icon {
+.angebot__header-icon {
     width: 8em;
     height: 8em;
     border-radius: 10000px;
@@ -72,30 +54,30 @@
     border: 0.1rem solid #ffffff;
 }
 
-.angebot--content {
+.angebot__content {
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem 0 1rem;
 }
 
-.angebot--fach {
+.angebot__fach {
     color: #374151;
     font-weight: 650;
     font-size: 1.8em;
 }
 
-.angebot--info {
+.angebot__info {
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.angebot--value {
+.angebot__value {
     margin-top: 0.5rem;
     font-size: 1em;
     color: #374151;
 }
 
-.angebot--link {
+.angebot__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,11 +95,11 @@
     cursor: pointer;
 }
 
-.angebot--link:hover {
+.angebot__link:hover {
     background-color: #4642C2;
 }
 
-.angebot--teilnehmer {
+.angebot__teilnehmer {
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -126,12 +108,12 @@
     flex-direction: column;
 }
 
-.angebot--teilnehmer-heading {
+.angebot__teilnehmer-heading {
     color: #374151;
     text-align: center;
 }
 
-.angebot--teilnehmer-list {
+.angebot__teilnehmer-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 4rem;
@@ -140,7 +122,7 @@
     z-index: 1;
 }
 
-.angebot--teilnehmer-subnav {
+.angebot__teilnehmer-subnav {
     width: 50%;
     height: 2.5rem;
     display: flex;
@@ -152,7 +134,7 @@
     border-radius: 3.5rem;
 }
 
-.angebot--teilnehmer-list {
+.angebot__teilnehmer-list {
     width: 18rem;
     height: 2.5rem;
     background-color: #ffffff;
@@ -165,12 +147,12 @@
     padding: 0;
 }
 
-.angebot--teilnehmer-list-active {
+.angebot__teilnehmer-list--active {
     color: #5853F5;
     border-bottom: 0.1rem solid #5853F5;
 }
 
-.angebot--teilnehmer-container {
+.angebot__teilnehmer-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -181,18 +163,18 @@
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-container {
+    .angebot__teilnehmer-container {
         padding: 0 1rem 0 1rem;
     }
 }
 
 @media only screen and (max-width: 400px){
-    .angebot--teilnehmer-container {
+    .angebot__teilnehmer-container {
         padding: 0 0.5rem 0 0.5rem;
     }
 }
 
-.angebot--teilnehmer-wrapper {
+.angebot__teilnehmer-wrapper {
     width: 60%;
     height: 4rem;
     background-color: #F3F4F6;
@@ -206,13 +188,13 @@
 }
 
 @media only screen and (max-width: 1190px){
-    .angebot--teilnehmer-wrapper {
+    .angebot__teilnehmer-wrapper {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 820px){
-    .angebot--teilnehmer-wrapper-second {
+    .angebot__teilnehmer-wrapper--second {
         display: flex;
         flex-direction: column;
         width: 16rem;
@@ -222,13 +204,13 @@
 }
 
 @media only screen and (max-width: 800px){
-    .angebot--teilnehmer-wrapper {
+    .angebot__teilnehmer-wrapper {
         width: 95%;
     }
 }
 
 @media only screen and (max-width: 800px){
-    .angebot--teilnehmer-wrapper-second {
+    .angebot__teilnehmer-wrapper--second {
         display: flex;
         flex-direction: column;
         width: 14rem;
@@ -237,18 +219,18 @@
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-wrapper {
+    .angebot__teilnehmer-wrapper {
         grid-template-columns: 25% 25% 25% 25%;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .angebot--teilnehmer-wrapper {
+    .angebot__teilnehmer-wrapper {
         grid-template-columns: 25% 1fr 25% 4.5rem;
     }
 }
 
-.angebot--teilnehmer-image {
+.angebot__teilnehmer-image {
     width: 3.5rem;
     height: 3.5rem;
     background-color: #ffffff;
@@ -257,66 +239,66 @@
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-image {
+    .angebot__teilnehmer-image {
         display: none;
     }
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-image-second {
+    .angebot__teilnehmer-image--second {
         display: block;
     }
 }
 
-.angebot--teilnehmer-icon {
+.angebot__teilnehmer-icon {
     width: 100%;
     height: 100%;
 }
 
-.angebot--teilnehmer-name {
+.angebot__teilnehmer-name {
     font-size: 1.35rem;
     font-weight: normal;
 }
 
 @media only screen and (max-width: 820px){
-    .angebot--teilnehmer-name-second {
+    .angebot__teilnehmer-name--second {
         text-align: center;
         margin-top: 1rem;
     }
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-name {
+    .angebot__teilnehmer-name {
         margin-left: 1rem;
     }
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-name-second {
+    .angebot__teilnehmer-name--second {
         margin-left: 0;
         text-align: center;
     }
 }
 
 @media only screen and (max-width: 400px){
-    .angebot--teilnehmer-name {
+    .angebot__teilnehmer-name {
         margin-left: 0.5rem;
         font-size: 1.1rem;
     }
 }
 
 @media only screen and (max-width: 400px){
-    .angebot--teilnehmer-name-second {
+    .angebot__teilnehmer-name--second {
         margin-left: 0;
         font-size: 1.35rem;
     }
 }
 
-.angebot--teilnehmer-more {
+.angebot__teilnehmer-more {
     color: #4642C2;
 }
 
-.angebot--teilnehmer-delete {
+.angebot__teilnehmer-delete {
     cursor: pointer;
     width: 9.5rem;
     height: 2rem;
@@ -327,37 +309,37 @@
     color: #ffffff;
 }
 
-.angebot--teilnehmer-delete-small {
+.angebot__teilnehmer-delete--small {
     display: none;
 }
 
-.angebot--teilnehmer-delete-tiny {
+.angebot__teilnehmer-delete--tiny {
     display: none;
 }
 
 @media only screen and (max-width: 600px){
-    .angebot--teilnehmer-delete {
+    .angebot__teilnehmer-delete {
         display: none;
     }
 
-    .angebot--teilnehmer-delete-small {
+    .angebot__teilnehmer-delete--small {
         display: block;
         width: 6rem;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .angebot--teilnehmer-delete-small {
+    .angebot__teilnehmer-delete--small {
         display: none;
     }
 
-    .angebot--teilnehmer-delete-tiny {
+    .angebot__teilnehmer-delete--tiny {
         display: block;
         width: 4rem;
     }
 }
 
-.angebot--anfragen-annehmen {
+.angebot__anfragen-annehmen {
     cursor: pointer;
     width: 7rem;
     height: 2rem;
@@ -368,7 +350,7 @@
     color: #ffffff;
 }
 
-.angebot--anfragen-ablehnen {
+.angebot__anfragen-ablehnen {
     cursor: pointer;
     width: 7rem;
     height: 2rem;
@@ -380,16 +362,16 @@
 }
 
 @media only screen and (max-width: 820px){
-    .angebot--anfragen-annehmen-second {
+    .angebot__anfragen-annehmen--second {
         margin-top: 1rem;
     }
 
-    .angebot--anfragen-ablehnen-second {
+    .angebot__anfragen-ablehnen--second {
         margin-top: 0.5rem;
     }
 }
 
-.angebot--contact-container {
+.angebot__contact-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -398,24 +380,24 @@
     align-items: center;
 }
 
-.angebot--contact-container-small {
+.angebot__contact-container--small {
     height: 15rem;
 }
 
-.angebot--contact-explanation {
+.angebot__contact-explanation {
     width: 50%;
     margin-top: 2rem;
     text-align: center;
 }
 
-.angebot--contact-heading {
+.angebot__contact-heading {
     color: #374151;
     width: 50%;
     margin-top: 2rem;
     text-align: center;
 }
 
-.angebot--contact-wrapper {
+.angebot__contact-wrapper {
     width: 20rem;
     height: 2.5rem;
     margin-top: 1rem;
@@ -427,7 +409,7 @@
     color: #5853F5;
 }
 
-.angebot--contact-wrapper-big {
+.angebot__contact-wrapper-big {
     width: 30rem;
     height: 10rem;
     margin-top: 1rem;
@@ -439,36 +421,36 @@
 }
 
 @media only screen and (max-width: 500px){
-    .angebot--contact-wrapper-big {
+    .angebot__contact-wrapper-big {
         width: 20rem;
     }
 
-    .angebot--contact-wrapper {
+    .angebot__contact-wrapper {
         width: 15rem;
     }
 
-    .angebot--contact-container {
+    .angebot__contact-container {
         padding: 0 1rem 0 1rem;
     }
 
-    .angebot--contact-heading {
+    .angebot__contact-heading {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 360px){
-    .angebot--contact-wrapper-big {
+    .angebot__contact-wrapper-big {
         width: 18rem;
     }
 }
 
-.angebot--width {
+.angebot__width {
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-.angebot--contact-edit {
+.angebot__contact-edit {
     width: 15rem;
     height: 2.5rem;
     margin-top: 2rem;
@@ -483,16 +465,16 @@
     transition: all 0.2s ease-in-out;
 }
 
-.angebot--contact-edit:hover {
+.angebot__contact-edit:hover {
     background-color: #374151;
     color: #ffffff;
 }
 
-.angebot--hide {
+.angebot__hide {
     display: none;
 }
 
-.popup--overlay {
+.popup__overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -502,7 +484,7 @@
     z-index: 10;
 }
 
-.popup--container-medium {
+.popup__ontainer--medium {
     position: fixed;
     width: 30rem;
     height: 25rem;
@@ -514,11 +496,11 @@
     padding: 0.5rem;
 }
 
-.popup--container-small {
+.popup__container--small {
     height: 15rem;
 }
 
-.popup--container-left {
+.popup__container--left {
     left: auto;
     right: 2rem;
     top: 2rem;
@@ -526,33 +508,33 @@
 }
 
 
-.popup--container-header {
+.popup__container-header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.popup--container-heading {
+.popup__container-heading {
     font-weight: normal;
     font-size: 1.5rem;
 }
 
-.popup--container-heading-fivehundred {
+.popup__container-heading--five-hundred {
     display: none;
 }
 
 @media only screen and (max-width: 500px){
-    .popup--container-heading-hide {
+    .popup__container-heading--hide {
         display: none;
     }
 
-    .popup--container-heading-fivehundred {
+    .popup__container-heading--five-hundred {
         display: block;
     }
 }
 
 
-.popup--container-icon {
+.popup__container-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,141 +551,36 @@
     display: none;
 }
 
-.form--select-container {
-    position: relative;
-    width: 25rem;
-    color: #374151;
-}
-
-.form--select-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    outline: none;
-    background-color: #fff;
-    border: 0.1rem solid #F3F4F6;
-    border-radius: 0.15rem;
-    width: 60%;
-    height: 2.2rem;
-    font-size: 1rem;
-    padding: 0 0.5rem 0 0.5rem;
-    z-index: 3;
-}
-
-.form--select-container.active .form--select-arrow {
-    transform: rotate(-0deg);
-}
-
-.form--select-container.active .form--select-list {
-    opacity: 1;
-    visibility: visible;
-    transform: scaleY(1);
-}
-
-.form--select-arrow {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid #000;
-    transition: transform ease-in-out 0.3s;
-    transform: rotate(90deg);
-}
-
-.form--select-list {
-    position: absolute;
-    list-style: none;
-    width: 60%;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    border: 1px solid #F3F4F6;
-    border-radius: 0.15rem;
-    padding: 10px;
-    margin-top: 10px;
-    max-height: 10rem;
-    overflow-y: auto;
-    transition: 0.5s ease;
-    transform: scaleY(0);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 10;
-}
-
-.form--select-list:focus-within {
-    box-shadow: 0 10px 25px rgba(88, 83, 245, 0.6);
-}
-
-.form--select-option {
-    gap: 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.form--select-option label {
-    width: 100%;
-    cursor: pointer;
-    padding: 0.2rem 0.2rem;
-}
-
-.form--select-list::-webkit-scrollbar {
-    width: 7px;
-}
-.form--select-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 25px;
-}
-
-.form--select-list::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 25px;
-}
-
-.form--select-option:hover,
-.form--select-list input:checked ~ label {
-    background-color: #f2f2f2;
-}
-
-.form--select-option input:focus ~ label {
-    background-color: #dfdfdf;
-}
-
-.form--select-list input[type="radio"] {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-}
-
-.popup--form-container {
+.popup__form-container {
     padding-left: 1rem;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
 }
 
-.popup--form-margin {
+.popup__form-margin {
     margin-top: 1rem;
 }
 
-.popup--form-radio-container {
+.popup__form-radio-container {
     display: flex;
     flex-direction: column;
 }
 
-.popup--form-radio-container input[type="radio"]{
+.popup__form-radio-container input[type="radio"]{
     cursor: pointer;
 }
 
-.popup--form-label {
+.popup__form-label {
     width: 100%;
     cursor: pointer;
 }
 
-.popup--form-radio-group {
+.popup__form-radio-group {
     display: flex;
 }
 
-.angebote--grid-filter {
+.angebote__grid-filter {
     text-align: center;
     grid-column: 2/3;
     color: #5853F5;
@@ -711,30 +588,15 @@
     font-size: 1.1rem;
 }
 
-.angebote--grid-filter-container {
+.angebote__grid-filter-container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.angebot--contact-email {
+.angebot__contact-email {
     font-size: 0.9rem;
-}
-
-.nav--sub-hide-more {
-    display: none;
-}
-
-.nav--sub-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.nav--sub-action-dark {
-    color: #374151;
 }
 
 .angebot--hide-third {
@@ -742,77 +604,69 @@
 }
 
 @media only screen and (max-width: 350px) {
-    .popup--container-medium {
+    .popup__ontainer--medium {
         width: 18rem;
         left: calc(50% - 9rem);
     }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 350px) {
-    .popup--container-medium {
+    .popup__ontainer--medium {
         width: 20rem;
         left: calc(50% - 10rem);
     }
 
-    .popup--container-heading-to-small {
+    .popup__container-heading--to-small {
         display: none;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .angebot--wrapper {
+    .angebot__wrapper {
         width: 16rem;
     }
 }
 
 @media only screen and (max-width: 470px){
-    .angebot--teilnehmer-subnav-eigeneAngebote {
+    .angebot__teilnehmer-subnav--eigene-angebote {
         flex-direction: column;
         height: 9rem;
     }
 }
 
 @media only screen and (max-width: 590px){
-    .angebot--teilnehmer-subnav-eigeneAngebote {
+    .angebot__teilnehmer-subnav--eigene-angebote {
         width: 98%;
         margin-left: 1%;
     }
 }
 
 @media only screen and (max-width: 700px){
-    .angebot--teilnehmer-list-eigeneAngebote {
+    .angebot__teilnehmer-list--eigene-angebote {
         width: 14rem;
     }
 }
 
 @media only screen and (max-width: 950px) and (min-width: 590px){
-    .angebot--teilnehmer-subnav-eigeneAngebote {
+    .angebot__teilnehmer-subnav--eigene-angebote {
         width: 80%;
         margin-left: 10%;
     }
 }
 
 @media only screen and (max-width: 1100px){
-    .angebot--contact-container-small {
+    .angebot__contact-container--small {
         height: 22rem;
         padding: 0 2rem 0 2rem;
     }
 
-    .angebot--contact-explanation {
+    .angebot__contact-explanation {
         width: 75%;
     }
 }
 
 @media only screen and (max-width: 600px){
-    .nav--sub-hide {
-        display: none;
-    }
-
-    .nav--sub-hide-more {
-        display: flex;
-    }
-
-    .angebot--contact-explanation {
+    .angebot__contact-explanation {
         width: 90%;
     }
 }

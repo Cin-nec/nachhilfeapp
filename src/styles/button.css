@@ -1,4 +1,10 @@
-.button--border-big {
+/*
+  Datei: button.css
+  Beschreibung: Enthält alle Styles zu den primären Text-Buttons, spezialisierte Buttons in entsprechenden CSS-Dateien zu den Seiten
+  Letzte Überarbeitung: 17.02.25 - 20:37
+ */
+
+.button__border--big {
     margin-top: 3rem;
     height: 3rem;
     width: 15rem;
@@ -15,13 +21,13 @@
     text-decoration: none;
 }
 
-.button--border-big:hover {
+.button__border--big:hover {
     border: solid 0.1rem #374151;
     outline-color: #F3F4F6;
     outline-offset: 10px;
 }
 
-.button--border-big-reverse {
+.button__border--big-reverse {
     margin-top: 3rem;
     height: 3rem;
     width: 15rem;
@@ -35,13 +41,13 @@
     color: #5853F5;
 }
 
-.button--border-big-reverse:hover {
+.button__border--big-reverse:hover {
     border: solid 0.1rem #5853F5;
     outline-color: #ffffff;
     outline-offset: 10px;
 }
 
-.button--border-small-white {
+.button__border--small-white {
     margin-top: 3rem;
     height: 3rem;
     width: 10rem;
@@ -55,7 +61,7 @@
     color: #ffffff;
 }
 
-.button--border-small-reverse:hover {
+.button__border--small-reverse:hover {
     border: solid 0.1rem #ffffff;
     outline-color: #5853F5;
     outline-offset: 10px;
@@ -85,7 +91,7 @@
     transition: all ease-in-out 0.3s;
 }
 
-.btn-submit-icon {
+.button--submit-icon {
     left: 1rem;
     position: absolute;
     transition: all ease-in-out 0.5s;
@@ -95,7 +101,7 @@
     margin-left: 0;
 }
 
-.button--submit:hover .btn-submit-icon {
+.button--submit:hover .button--submit-icon {
     transform: translateY(-40px);
 }
 
@@ -126,7 +132,7 @@
     transition: all ease-in-out 0.3s;
 }
 
-.btn-reset-icon {
+.button--reset__icon {
     position: absolute;
     transform: translateY(-40px);
     transition: all ease-in-out 0.3s;
@@ -136,11 +142,11 @@
     transform: translateY(40px);
 }
 
-.button--reset:hover .btn-reset-icon {
+.button--reset:hover .button--reset__icon {
     transform: translateY(0px);
 }
 
-.button--border-big-inner {
+.button__border--big-inner {
     width: 100%;
     height: 100%;
     outline: none;
